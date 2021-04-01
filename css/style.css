@@ -346,7 +346,7 @@ header .container{
     line-height: 1.2;
     text-transform: uppercase;
     color:#00C0FF;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
     font-weight: 400;
 
 }
@@ -455,22 +455,21 @@ header .container{
 
 .comment-first{
     background-color: #141414;
-    padding: 105px 0;
+    padding: 122px 0 50px;
 }
 .comment-first .container{
     max-width: 830px;
-    padding: 0 15px;
     margin: 0 auto;
     color: #00C0FF;
     text-align: center;
 }
 .comment-first p{
     font-size: 21px;
-    line-height: 30px;
+    line-height: 32px;
 }
 .commentFirst-author{
     font-size: 19px;
-    padding-top: 15px;
+    padding-top: 40px;
 }
 
 
@@ -486,12 +485,11 @@ header .container{
 .ticket{
     background:url("../img/ticket.jpg");
     background-size: cover;
-    padding: 200px 0 205px;
+    padding: 210px 0 205px;
 }
 .ticket .container{
     text-align: right;
-    max-width: 1160px;
-    padding: 0 15px;
+    max-width: 1245px;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
@@ -503,9 +501,10 @@ header .container{
     color:#fff;
     text-transform: uppercase;
     font-size: 58px;
+    line-height: 52px;
 }
 .location{
-    width: 28%;
+    width: 25%;
 }
 .ticket-text{
     font-family: 'Roboto';
@@ -513,10 +512,11 @@ header .container{
     font-style: normal;
     font-size: 17px;
     color:#fff;
-    padding: 20px 0 45px;
+    padding: 20px 0 50px;
+    line-height: 18px;
 }
 .location a{
-    padding: 12px 62px;
+    padding: 12px 58px;
     background-color: #fff;
     opacity: .75;
     font-family: 'Roboto';
@@ -527,8 +527,9 @@ header .container{
     border-radius: 20px;
     text-transform: uppercase;
     display: block;
-    width: 180px;
+    width: 160px;
     margin-left: auto;
+    text-align: center;
 }
 .location a:hover{
     opacity: 1;
@@ -539,11 +540,10 @@ header .container{
 
 .calendar{
     background-color: #000;
-    padding: 200px 0 200px;
+    padding: 208px 0 212px;
 }
 .calendar .container{
     max-width: 1160px;
-    padding: 0 15px;
     margin: 0 auto; 
 }
 .cal{
@@ -553,8 +553,8 @@ header .container{
 .cal li{
     width: 50%;
     color:#00C0FF;
-    margin-top: 220px;
-    padding: 0 50px;
+    margin-top: 237px;
+    padding: 0 90px 0 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -569,7 +569,11 @@ header .container{
     text-align: center;
 }
 .centr img{
-    margin-top: auto;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+.calend-img{
+    padding: 0 0 10px 90px;
 }
 .data-project{
     font-family: 'Raleway';
@@ -592,10 +596,10 @@ header .container{
 
 .data{
     background-color: #141414;
-    padding: 80px 0;
+    padding: 90px 0;
 }
 .data .container{
-    max-width: 1160px;
+    max-width: 1270px;
     padding: 0 15px;
     margin: 0 auto;
     display: flex;
@@ -611,7 +615,7 @@ header .container{
     font-family: 'Raleway';
     font-weight: 500;
     font-style: normal;
-    font-size: 17px;
+    font-size: 19px;
 }
 .col-33 .head-data{
     font-size: 21px;
