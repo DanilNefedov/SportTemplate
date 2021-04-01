@@ -371,7 +371,7 @@ header .container{
 .priorities .col-33{
     text-align: center;
     background:rgba( 3, 3, 3, 0.5);
-    padding: 58px 85px 75px;
+    padding: 63px 85px 75px;
 }
 .priorities .col-33 h5{
     text-transform: uppercase;
@@ -387,7 +387,7 @@ header .container{
     line-height: 1.2;
     font-size: 17px;
     text-align: left;
-    margin: 0 0 55px;
+    margin: 0 0 62px;
 }
 /*.author{
     text-align: center;
@@ -443,6 +443,204 @@ header .container{
     margin: 0 auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+.comment-first{
+    background-color: #141414;
+    padding: 105px 0;
+}
+.comment-first .container{
+    max-width: 830px;
+    padding: 0 15px;
+    margin: 0 auto;
+    color: #00C0FF;
+    text-align: center;
+}
+.comment-first p{
+    font-size: 21px;
+    line-height: 30px;
+}
+.commentFirst-author{
+    font-size: 19px;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ticket{
+    background:url("../img/ticket.jpg");
+    background-size: cover;
+    padding: 200px 0 205px;
+}
+.ticket .container{
+    text-align: right;
+    max-width: 1160px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.buy-ticket{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-style: normal;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 58px;
+}
+.location{
+    width: 28%;
+}
+.ticket-text{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+    color:#fff;
+    padding: 20px 0 45px;
+}
+.location a{
+    padding: 12px 62px;
+    background-color: #fff;
+    opacity: .75;
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 21px;
+    color:#00C0FF;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: block;
+    width: 180px;
+    margin-left: auto;
+}
+.location a:hover{
+    opacity: 1;
+}
+
+
+
+
+.calendar{
+    background-color: #000;
+    padding: 200px 0 200px;
+}
+.calendar .container{
+    max-width: 1160px;
+    padding: 0 15px;
+    margin: 0 auto; 
+}
+.cal{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cal li{
+    width: 50%;
+    color:#00C0FF;
+    margin-top: 220px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cal li:nth-child(1){
+    margin-top: 0;
+}
+.cal li:nth-child(2){
+    margin-top: 0;
+}
+.centr{
+    text-align: center;
+}
+.centr img{
+    margin-top: auto;
+}
+.data-project{
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+}
+.head-project{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 21px;
+    padding: 10px 0 45px;
+}
+
+
+
+
+
+.data{
+    background-color: #141414;
+    padding: 80px 0;
+}
+.data .container{
+    max-width: 1160px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.data .col-33{
+    width: 33.3%;
+    margin: 0;
+    color: #fff;
+}
+.col-33 p{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+}
+.col-33 .head-data{
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.comment{
+    background-color: #000;
+    padding: 105px 0;
+}
+.comment .container{
+    max-width: 830px;
+    padding: 0 15px;
+    margin: 0 auto;
+    color: #00C0FF;
+    text-align: center;
+}
+.comment p{
+    font-size: 21px;
+    line-height: 30px;
+}
+.comment .comment-author{
+    font-size: 19px;
+    padding-top: 15px;
+}
 /*
 
 */
@@ -524,6 +722,15 @@ header .container{
     .text p{
         font-size: 12px;
     }
+    .ticket{
+        padding: 7% 0;
+    }
+    .ticket .container{
+        padding-right: 10%;
+    }
+    .location{
+        width:40%;
+    }
 }
 
 @media(max-width: 920px){
@@ -543,6 +750,23 @@ header .container{
     }
     .main-inner p{
         font-size: 16px;
+    }
+    .calendar{
+        padding: 10% 0;
+    }
+    .cal li{
+        padding: 0 25px;
+        margin-top: 10%;
+    }
+    .head-project{
+        font-size: 17px;
+        padding-bottom: 15px; 
+    }
+    .text-project{
+        font-size: 15px;
+    }
+    .centr img{
+        width: 80%;
     }
 }
 
@@ -579,6 +803,7 @@ header .container{
         justify-content: space-between;
         align-items: center;
     }
+
 }
 
 
@@ -595,6 +820,43 @@ header .container{
     }
     .text p{
         font-size: 10px;
+    }
+    .comment-first{
+        padding: 5% 0;
+    }
+    .comment-first .container{
+        width: 67%;
+    }
+    .comment-first p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .commentFirst-author{
+        font-size: 14px;
+    }
+    .ticket .container{
+        padding-right: 10%;
+        text-align: center;
+        padding-right: 15px;
+    }
+    .location{
+        width:100%;
+    }
+    .location a{
+        margin:0 auto;
+    }
+     .comment{
+        padding: 5% 0;
+    }
+    .comment .container{
+        width: 67%;
+    }
+    .comment p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .comment-author{
+        font-size: 14px;
     }
 }
 @media(max-width: 768px){
@@ -618,6 +880,15 @@ header .container{
         font-size: 28px;
         margin-bottom: ;
     }
+    .data{
+        padding: 6% 0;
+    }
+    .col-33 .head-data{
+        font-size: 17px;
+    }
+    .col-33 p{
+        font-size: 15px;
+    }
 }
 @media(max-width: 760px){
     .main-inner p{
@@ -630,7 +901,6 @@ header .container{
 @media(max-width: 600px){
     .col-50{
         width: 100%;
-
     }
     .nature__image{
         display:none; 
@@ -641,6 +911,27 @@ header .container{
     }
     .nature .col-50{
         padding-right: 0;
+    }
+    .buy-ticket{
+        font-size: 35px;
+    }
+    .ticket-text{
+        font-size: 15px;
+    }
+    .location a{
+        padding: 6px 31px;
+        font-size: 17px;
+    }
+    .data .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .data .col-33{
+        width: 100%;
+        padding-top: 8%;
+    }
+    .data .col-33:first-child{
+        padding-top: 0;
     }
 }
 
@@ -689,6 +980,24 @@ header .container{
     .priorities .col-33 p{
         text-align: center;
     }
+    .data-project{
+        font-size: 15px;
+    }
+    .text-project{
+        font-size: 13px;
+    }
+    .centr img{
+        width: 60%;
+    }
+    .comment-first p{
+        font-size: 14px;
+    }
+    .comment p{
+        font-size: 14px;
+    }
+    .centr img{
+        width: 100%;
+    }
 }
 @media(max-width: 420px){
     .main{
@@ -708,6 +1017,7 @@ header .container{
         font-size: 16px;
         padding: 5px 20px;
     }
+
 }
 @media(max-width: 320px){
     .main-inner p{
