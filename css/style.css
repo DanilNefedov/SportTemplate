@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap');*/
 @font-face {
     font-family: 'Raleway';
@@ -70,7 +77,8 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body{
     font: 400 19px/1 'Raleway', Arial, tahoma, verdana, sans-serif;
@@ -111,24 +119,38 @@ header .container{
 }
 .header-inner{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .logo{
     margin-left: 6%;
     margin-top: 6px;
 }
 .navigation{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .link_nav a{
     text-transform: uppercase;
     display: block;
     padding: 19px 43px;
     color:#01AAE1;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .link_nav a:hover{
@@ -149,9 +171,15 @@ header .container{
     background: url(../img/banner.jpg) no-repeat 100% 100%;
     /*margin: 0 auto;*/
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-size: cover;
     padding-top:380px;
     padding-bottom: 170px;
@@ -167,9 +195,16 @@ header .container{
 .main-inner{ 
    /* padding-top: 390px;
     padding-bottom: 160px;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .main-inner p{
     text-align: center;
@@ -215,8 +250,12 @@ header .container{
     width: 32px;
     height: 32px;
     display: none;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
 }
 .mobile-button span{
@@ -225,12 +264,16 @@ header .container{
     width: 32px;
     background: #00c0ff;
     z-index: 5;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     
 }
 .mobile-button:before,
 .mobile-button:after{
     content: '';
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     height: 4px;
     width: 100%;
@@ -247,11 +290,15 @@ header .container{
     opacity: 0;
 }
 .mobile-button.opened:before{
-    transform: rotate(45deg) ;
+    -webkit-transform: rotate(45deg) ;
+        -ms-transform: rotate(45deg) ;
+            transform: rotate(45deg) ;
     top: calc(50% - 2px);
 }
 .mobile-button.opened:after{
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     bottom: calc(50% - 2px)
 }
 
@@ -300,8 +347,12 @@ header .container{
 .we .container{
     width: 1080px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .text{
     width: 33%;
@@ -359,13 +410,19 @@ header .container{
     max-width: 980px;
 }
 .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .col-33{
     width: calc(33.3% - 23px);
-    flex-shrink: 0;/*не сжимался контент при маленьком объеме*/
+    -ms-flex-negative: 0;
+        flex-shrink: 0;/*не сжимался контент при маленьком объеме*/
     margin: 0 0 30px;
 }
 .priorities .col-33{
@@ -413,7 +470,8 @@ header .container{
 }
 .col-50{
     width: calc(50% - 15px);
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 .nature{
     position: relative;
@@ -491,8 +549,12 @@ header .container{
     text-align: right;
     max-width: 1245px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 .buy-ticket{
     font-family: 'Roboto';
@@ -547,17 +609,26 @@ header .container{
     margin: 0 auto; 
 }
 .cal{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .cal li{
     width: 50%;
     color:#00C0FF;
     margin-top: 237px;
     padding: 0 90px 0 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .cal li:nth-child(1){
     margin-top: 0;
@@ -602,8 +673,12 @@ header .container{
     max-width: 1270px;
     padding: 0 15px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
 }
 .data .col-33{
@@ -645,15 +720,94 @@ header .container{
     font-size: 19px;
     padding-top: 15px;
 }
+
+
+
+
+
+
+
+
+
+
 /*
-ds
+TABS
 */
+.what_we_do .container{
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+.what_we_do{
+    padding: 140px 0 120px;
+    background: #000;
+    text-align: center;
+}
+.what_we_do .text{
+    margin-bottom: 75px;
+}
+.tabs__caption li{
+    font-size: 17px;
+    color:#00c0ff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.tabs__caption li.active{
+    color:#000;
+    background: #00c0ff;
+}
+.tabs__caption{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.tabs__content{
+    color:#fff;
+    padding-top: 70px;
+}
+
+.projects__item{
+    max-width: 200px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;/*расстяг на макс возможное*/
+
+}
+.projects__item img{
+    max-width: 100%;
+    height: auto;
+    margin:0 0 45px;
+}
+.projects__item p{
+    font-size: 17px;
+    margin:0 0 55px;
+}
+.projects__item h5{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700px;
+    margin:0 0 50px;
+}
 
 
 
-
-
-
+/*flex-shrink не дает сжиматься блоки если контент в нем маньше чем изначально было задано*/
 
 
 
@@ -784,6 +938,8 @@ ds
 
 @media(max-width: 800px){
     .mobile-button{
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
     }
     .navigation{
@@ -803,9 +959,15 @@ ds
     }
     .header .container{
         padding:8px 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
 }
@@ -927,8 +1089,13 @@ ds
         font-size: 17px;
     }
     .data .container{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .data .col-33{
         width: 100%;
@@ -948,9 +1115,16 @@ ds
     }
     .we .container{
         max-width: 250px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .text{
         margin-bottom: 5%;
@@ -1032,7 +1206,6 @@ ds
         line-height: 17px;
     }
 }
-
 
 
 
