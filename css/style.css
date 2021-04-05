@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap');*/
 @font-face {
     font-family: 'Raleway';
@@ -182,7 +189,7 @@ header .container{
             justify-content: center;
     background-size: cover;
     padding-top:380px;
-    padding-bottom: 170px;
+    padding-bottom: 165px;
 }
 .main .container{
     width: 60%;
@@ -315,7 +322,7 @@ header .container{
 .who{
     background-color: #000;
     padding-top: 160px;
-    padding-bottom: 150px;
+    padding-bottom: 155px;
 }
 .who .container{
     width:940px;
@@ -383,6 +390,11 @@ header .container{
     background: url("../img/prioriti.jpg") no-repeat 100% 0;
     background-size: cover;
 }
+.priorities .container{
+    max-width: 1160px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 .title-29{
     font-size: 29px;
     text-transform: uppercase;
@@ -446,10 +458,6 @@ header .container{
     text-align: left;
     margin: 0 0 62px;
 }
-/*.author{
-    text-align: center;
-    margin-top: 40px;
-}*/
 .author__name{
     font-size: 15px;
     font-family: Roboto, Raleway, Arial, sans-serif;
@@ -463,20 +471,203 @@ header .container{
     color:#fff;
     font-size: 15px;
 }
-.priorities .container{
-    max-width: 1160px;
+
+
+
+
+
+
+
+
+
+
+/*
+TABS
+*/
+.what_we_do .container{
+    max-width: 1185px;
     padding: 0 15px;
     margin: 0 auto;
 }
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+.what_we_do h4{
+    font-size: 29px;
+    padding-bottom: 10px;
+}
+.what_we_do{
+    padding: 100px 0 130px;
+    background: #000;
+    text-align: center;
+}
+.what_we_do .text1{
+    margin-bottom: 75px;
+    max-width: 750px;
+}
+.tabs__caption li{
+    font-size: 17px;
+    color:#00c0ff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.tabs__caption li.active{
+    color:#000;
+    background: #00c0ff;
+}
+.tabs__caption{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.tabs__content{
+    color:#fff;
+    padding-top: 70px;
+}
+
+.projects__item{
+    max-width: 200px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;/*расстяг на макс возможное*/
+
+}
+.project-image{
+    max-width: 100%;
+    height: auto;
+    margin:0 0 45px;
+}
+.mobile{
+    max-height: 108px;
+}
+.projects__item p{
+    font-size: 17px;
+    margin:0 0 55px;
+}
+.projects__item h5{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700px;
+    margin:0 0 50px;
+}
+
+
+
+.travel .row{
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.travel__item{
+    max-width: 300px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.travel__item img{
+    max-width: 100%;
+    height: auto;
+    margin:0 0 40px;
+    height: 40vh;   
+}
+.travel__item h5{
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.travel__item p{
+    line-height: 25px;
+}
+
+
+
+
+.mission .container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.mission h3{
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+.mission p{
+    line-height: 30px;
+}
+
+
+
+
+.photos .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.photos h3{
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+.photos ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.photos li{
+    width: calc(50% - 30px);
+    margin-bottom: 30px;
+}
+/*flex-shrink не дает сжиматься блоки если контент в нем маньше чем изначально было задано*/
+
+
+
+
+
+
+
+
+
+
+/*.author{
+    text-align: center;
+    margin-top: 40px;
+}*/
+
+
+
+
 .col-50{
     width: calc(50% - 15px);
     -ms-flex-negative: 0;
         flex-shrink: 0;
 }
+
+
+
 .nature{
     position: relative;
     background: #000;
-    padding: 185px 0 330px;
+    padding: 185px 0 335px;
 }
 .nature .text1{
     text-align: left;
@@ -510,36 +701,6 @@ header .container{
 
 
 
-
-.comment-first{
-    background-color: #141414;
-    padding: 122px 0 50px;
-}
-.comment-first .container{
-    max-width: 830px;
-    margin: 0 auto;
-    color: #00C0FF;
-    text-align: center;
-}
-.comment-first p{
-    font-size: 21px;
-    line-height: 32px;
-}
-.commentFirst-author{
-    font-size: 19px;
-    padding-top: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
 .ticket{
     background:url("../img/ticket.jpg");
     background-size: cover;
@@ -563,7 +724,7 @@ header .container{
     color:#fff;
     text-transform: uppercase;
     font-size: 58px;
-    line-height: 52px;
+    line-height: 49px;
 }
 .location{
     width: 25%;
@@ -596,6 +757,46 @@ header .container{
 .location a:hover{
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comment-first{
+    background-color: #141414;
+    padding: 118px 0 50px;
+}
+.comment-first .container{
+    max-width: 830px;
+    margin: 0 auto;
+    color: #00C0FF;
+    text-align: center;
+}
+.comment-first p{
+    font-size: 21px;
+    line-height: 32px;
+}
+.commentFirst-author{
+    font-size: 19px;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -730,98 +931,78 @@ header .container{
 
 
 
-/*
-TABS
-*/
-.what_we_do .container{
-    max-width: 1270px;
-    padding: 0 15px;
+
+
+
+
+
+
+
+footer{
+    padding: 78px 0 40px;
+    border-bottom: 25px solid #00C0FF;
+    background-color: #141414;
+    color:#fff;
+}
+footer h3{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+footer p{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+}
+footer .container{
+    max-width: 1160px;
+    padding-left: 40px;
     margin: 0 auto;
-}
-.tabs__content {
-  display: none; /* по умолчанию прячем все блоки */
-}
-.tabs__content.active {
-  display: block; /* по умолчанию показываем нужный блок */
-}
-.what_we_do{
-    padding: 140px 0 120px;
-    background: #000;
-    text-align: center;
-}
-.what_we_do .text{
-    margin-bottom: 75px;
-}
-.tabs__caption li{
-    font-size: 17px;
-    color:#00c0ff;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.tabs__caption li.active{
-    color:#000;
-    background: #00c0ff;
-}
-.tabs__caption{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
-
-.tabs__content{
+.about{
+    width: calc(50% - 42px);
+}
+.media h3{
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+}
+.media p{
+    padding-bottom: 15px;
+    line-height: 30px;
+    max-width: 330px;
+}
+.media-image img{
+    padding-right: 7px;
+}
+.us{
+    margin-right: 50px;
+}
+.us h3{
+    padding-bottom: 45px;
+}
+.us p{
+    padding-bottom: 10px;
+}
+.us a{
+    display: block;
     color:#fff;
-    padding-top: 70px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
 }
-
-.projects__item{
-    max-width: 200px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;/*расстяг на макс возможное*/
-
+.us a:hover{
+    color: #00C0FF;
 }
-.projects__item img{
-    max-width: 100%;
-    height: auto;
-    margin:0 0 45px;
+.us col-33{
+    width: calc(33.3% - 200px);
 }
-.projects__item p{
-    font-size: 17px;
-    margin:0 0 55px;
-}
-.projects__item h5{
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 700px;
-    margin:0 0 50px;
-}
-
-
-
-/*flex-shrink не дает сжиматься блоки если контент в нем маньше чем изначально было задано*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -888,6 +1069,21 @@ TABS
     }
     .location{
         width:40%;
+    }
+    .travel .row{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+       
+    }
+    .travel__item{
+        max-width: none;
+        width: 100%;
+        padding-bottom: 20px;
     }
 }
 
@@ -1024,6 +1220,52 @@ TABS
     .comment-author{
         font-size: 14px;
     }
+    .what_we_do{
+        padding: 5% 0;
+    }
+    .what_we_do h4{
+        font-size: 20px;
+    }
+    .what_we_do .text1{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .tabs__content{
+        padding-top: 30px;
+    }
+    .projects__item h5{
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .projects__item p{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .author__name{
+        font-size: 13px;
+    }
+    .position{
+        font-size: 14px;
+    }
+    footer{
+        padding: 5% 0;
+    }
+    footer h3{
+        font-size: 16px;
+    }
+    .media p{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .about{
+        width: 45%;
+    }
+    .us h3{
+        padding-bottom: 15px;
+    }
+    .us .col-33{
+        width: auto;
+    }
 }
 @media(max-width: 768px){
     .col-33{
@@ -1062,6 +1304,21 @@ TABS
     }
     .main-inner img{
         width: 40%;
+    }
+    .projects__item{
+        padding-bottom: 20px;
+        margin:0 auto;
+    }
+    .project-image{
+        float: left;
+        padding-top: 25px;
+        padding-right: 15px;
+    }
+    .calend-img{
+        padding: 0 0 0 40px;
+    }
+    .mobile{
+    max-height: none;
     }
 }
 @media(max-width: 600px){
@@ -1103,6 +1360,31 @@ TABS
     }
     .data .col-33:first-child{
         padding-top: 0;
+    }
+    .travel__item img{
+        margin-bottom: 15px;
+    }
+    .travel__item p{
+        font-size: 16px;
+    }
+    .mission{
+        padding-top: 15px;
+    }
+    .mission h3{
+        padding-bottom: 15px;
+        font-size: 18px;
+    }
+    .mission p{
+        font-size: 15px;
+    }
+    .photos h3{
+        font-size: 18px;
+    }
+    .photos ul{
+        display: block;
+    }
+    .photos li {
+    width: 100%;
     }
 }
 
@@ -1150,6 +1432,12 @@ TABS
     .main-inner p{
         padding: 3% 0 6%;
     }
+    .media-image img{
+        width: 13%;
+    }
+    .about{
+        width: calc(45% - 10px);
+    }
 }
 @media(max-width: 480px){
     .col-33{
@@ -1176,6 +1464,19 @@ TABS
     .centr img{
         width: 100%;
     }
+    .calend-img{
+        margin-left: 20px;
+        padding: 0;
+    }
+    footer .container{
+        padding: 0 10px;
+    }
+    .us{
+        margin-right: 0;
+    }
+    .about{
+        width:calc(50% - 10px);
+    }
 }
 @media(max-width: 420px){
     .main{
@@ -1195,7 +1496,25 @@ TABS
         font-size: 16px;
         padding: 5px 20px;
     }
-
+    .tabs__caption li{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .media-image img{
+        width: 15%;
+    }
+    .us h3{
+        font-size: 12px;
+    }
+    .us a{
+        font-size: 10px;
+    }
+    .media h3{
+        font-size:12px; 
+    }
+    .media p{
+        font-size: 10px;
+    }
 }
 @media(max-width: 320px){
     .main-inner p{
@@ -1206,7 +1525,6 @@ TABS
         line-height: 17px;
     }
 }
-
 
 
 
