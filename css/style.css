@@ -586,9 +586,9 @@ TABS
 }
 .travel__item img{
     max-width: 100%;
-    height: auto;
+    min-height: 250px; 
     margin:0 0 40px;
-    height: 40vh;   
+       
 }
 .travel__item h5{
     text-transform: uppercase;
